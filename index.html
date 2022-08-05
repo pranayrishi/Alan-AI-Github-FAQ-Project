@@ -1,0 +1,141 @@
+<! –– 1. Other guidlelines that employers wanted us to include in our application––>
+
+<title>Alan AI GitHub FAQ with HTML & JavaScript</title>
+<div>
+    <h1 style="font-size: 32">GitHub's Frequently Asked Questions</h1>
+</div>
+<div class="alan-btn"></div>
+<link rel="stylesheet" href="faq.css">
+<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+    
+</script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "5eb891495e31e7800e64358a689f9bf62e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData, userName, userQuestion) {
+        if(commandData.command === "test_alan") {
+            TestAlan()
+        } else if(commandData.command === 'open2'){
+            window.open('https://www.githubstatus.com/');
+        } else if(commandData.command === 'open3'){
+            window.open('https://github.com/about');
+        } else if(commandData.command === 'open4'){
+            window.open('https://github.com/readme');
+        } else if(commandData.command === 'open5'){
+            window.open('https://github.com/explore');
+        } else if(commandData.command === 'open6'){
+            window.open('https://octoverse.github.com/');
+        } else if(commandData.command === 'open7'){
+            window.open('https://docs.github.com/en/get-started/using-git/about-git');
+        } else if(commandData.command === 'open8'){
+            window.open('https://docs.github.com/en/get-started/importing-your-projects-to-github/working-with-subversion-on-github/support-for-subversion-clients');
+        } else if(commandData.command === 'open9'){
+            window.open('https://github.com/security');
+        } else if(commandData.command === 'open10'){
+            window.open('https://github.com/pricing');
+        } else if(commandData.command === 'open11'){
+            window.open('https://github.blog/2018-10-26-github-and-microsoft/');
+        } else if(commandData.command === 'open12'){
+            window.open('https://docs.github.com/en/get-started/quickstart/hello-world');
+        } else if(commandData.command === 'scroll1'){
+            window.scrollTo(0,20)
+        } else if(commandData.command === 'scroll2') {
+            window.scrollTo(0,20)
+        } else if(commandData.command === 'scroll3') {
+            window.scrollTo(0,20)
+        } else if(commandData.command === 'scroll4') {
+            window.scrollTo(0,20)
+        } else if(commandData.command === 'scroll5') {
+            window.scrollTo(0,550)
+        } else if(commandData.command === 'scroll6') {
+            window.scrollTo(0,550)
+        } else if(commandData.command === 'scroll7') {
+            window.scrollTo(0,550)
+        } else if(commandData.command === 'scroll8') {
+            window.scrollTo(0,550)
+        } else if(commandData.command === 'scroll9') {
+            window.scrollTo(0,2000)
+        } else if(commandData.command === 'scroll10') {
+            window.scrollTo(0,2000)
+        } else if(commandData.command === 'scroll11') {
+            window.scrollTo(0,2000)
+        } else if(commandData.command === 'scroll12') {
+            window.scrollTo(0,2000)
+        } else if(commandData.command === 'emailquestion') {
+            // command goes in here, bottom is currently working code
+            const name = commandData.userName;
+            const question = commandData.userQuestion;
+            console.log(name);
+            console.log(question);
+            if (window.XMLHttpRequest){
+                    xmlhttp = new XMLHttpRequest();
+                }
+
+            else{
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            var PageToSendTo = "faq.php?";
+            var UrlToSend = PageToSendTo + name + question;
+
+            xmlhttp.open("GET", UrlToSend, false);
+            xmlhttp.send();
+        }
+    },
+    rootEl: document.getElementById("alan-btn"),
+});
+
+</script>
+
+<body>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">1. What is GitHub and how does it work?</h2>
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">GitHub is the home for all developers—a platform where you can share code, contribute to open source projects, or even automate your workflow with tools like GitHub Actions and Packages. If you’re just getting started with GitHub, you may know us best as a place for version control and collaboration.</h3>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">2. How do I see GitHub’s availability?</h2>
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter"><a href="https://www.githubstatus.com/">Check our real-time status report</a></h3>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">3. Why is GitHub so popular?</h2>
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">GitHub is built by developers for developers, and we’re proud to be home to the world’s largest open source community. With 50 million developers and millions more open source projects, GitHub has become the go-to place to collaborate and build software together.</h3> 
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter"><a href="https://github.com/about">See How We Got There</a></h3>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">4. Who is GitHub for?</h2>  
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">You! And it’s not just developers who build on GitHub—Fortune 500 companies, small teams, project managers, and college professors all use GitHub to do their best work, in one place. </h3> 
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter"><a href="https://github.com/readme">Meet our community.</a></h3>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">5. Do people use GitHub only for code?</h2>
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">Nope. Like we mentioned above, different people and teams use GitHub for different projects. While we got our start as a version control platform, GitHub is now used to manage teams, share resumes, find new projects, track work, and host discussions, just to name a few.</h3> 
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter"><a href="https://github.com/explore">Explore what people are building on GitHub</a></h3>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">6. Why should I use GitHub?</h2>
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">GitHub isn’t just a place to share code. It’s a chance to do something bigger. On GitHub, you can shape the future of software, work with the best developers in the world, and grow your skills and help others. </h3> 
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter"><a href="https://octoverse.github.com/">See how the world uses GitHub</a></h3>   
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">7. Are Git and GitHub the same?</h2>
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">Git is a version control system (VCS). GitHub is the platform where Git repositories can be hosted and teams can work on them together. </h3> 
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter"><a href="https://docs.github.com/en/get-started/using-git/about-git">Check out the Git Handbook</a></h3>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">8. Do I need Git in order to use GitHub?</h2>
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">Nope. GitHub repositories can be accessed from both Git and Subversion (SVN) clients.</h3> 
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter"><a href="https://docs.github.com/en/get-started/importing-your-projects-to-github/working-with-subversion-on-github/support-for-subversion-clients">Learn more about support for Subversion clients</a></h3>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">9. Is GitHub safe?</h2>
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">Millions of teams trust GitHub to keep their work safe. While security incidents can happen, our GitHub Security Team goes beyond industry standards to keep you and your code secure.</h3> 
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter"><a href="https://github.com/security">Stay up to date on our security process</a></h3>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">10. Is GitHub free?</h2>
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">All GitHub users and teams get free, unlimited access to public and private repositories. But if you’re looking for more collaboration features, security controls, and deployment options, we also offer paid plans: GitHub Pro, GitHub Team at $4 per user/month, and GitHub Enterprise at $21 per user/month. </h3> 
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter"><a href="https://github.com/pricing">Compare all GitHub plans and pricing</a></h3>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">11. Is GitHub owned by Microsoft?</h2>
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">Yes. Microsoft acquired GitHub in 2018. You can read more about it in  <a href="https://github.blog/2018-10-26-github-and-microsoft/">our announcement here.</a></h3>
+    <h2 class="question-font f4 text-mono lh-big underline-dashed">12. How do I start using GitHub?</h2>    
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter">We saved the best for last. All you need is a GitHub account and internet access. </h3> 
+    <h3 class="answer-font ml-5 d-flex flex-wrap gutter"><a href="https://docs.github.com/en/get-started/quickstart/hello-world">Get started with the "Hello World" guide</a></h3>
+</body>
+
+<script>
+    function goToPHPFile () {
+    }
+</script>
+
+<body>
+    <main>
+        <h2 class='new-question-font ml-5 d-flex flex-wrap gutter'>SEND New Questions</h2>
+        <form class="contact-form" action="faq.php" method="post">
+            <input type="text" name="name" placeholder="Full name">
+            <textarea name='question' placeholder="Question..."></textarea>
+            <button type="submit" name="submit">SEND MAIL</button>
+        </form>
+    </main>
+</body>
